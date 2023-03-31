@@ -1,0 +1,76 @@
+let name = "John";
+let message = `Hello ${name}`;
+
+console.log(message); // Output: Hello John
+
+console.log(name.length); // Output: 4
+
+console.log(name.toUpperCase()); // Output: JOHN
+
+
+
+
+
+let numbers = [1, 2, 3, 4, 5];
+
+let sum = numbers.reduce((total, num) => {
+  return total + num;
+});
+
+console.log(sum); // Output: 15
+
+let filteredNumbers = numbers.filter(num => num > 3);
+
+console.log(filteredNumbers); // Output: [4, 5]
+
+
+
+
+
+let person = {
+  name: "John",
+  age: 30,
+  city: "New York"
+};
+
+for (let key in person) {
+  console.log(`${key}: ${person[key]}`);
+}
+
+// Output:
+// name: John
+// age: 30
+// city: New York
+
+let keys = Object.keys(person);
+console.log(keys); // Output: ["name", "age", "city"]
+
+
+
+
+
+function greet(name) {
+  return `Hello ${name}`;
+}
+
+let message = greet("John");
+console.log(message); // Output: Hello John
+
+let multiply = (x, y) => {
+  return x * y;
+}
+
+let product = multiply(5, 10);
+console.log(product); // Output: 50
+
+
+
+
+
+let element = document.querySelector("#myElement");
+element.innerHTML = "Hello World";
+
+let button = document.querySelector("#myButton");
+button.addEventListener("click", () => {
+  console.log("Button clicked");
+});
